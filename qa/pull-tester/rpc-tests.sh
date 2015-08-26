@@ -5,7 +5,7 @@ CURDIR=$(cd $(dirname "$0"); pwd)
 # Get BUILDDIR and REAL_BITCOIND
 . "${CURDIR}/tests-config.sh"
 
-export BITCOINCLI=${BUILDDIR}/qa/pull-tester/run-bitcoin-cli
+export BITCOINCLI=${BUILDDIR}/qa/pull-tester/run-becoin-cli
 export BITCOIND=${REAL_BITCOIND}
 
 if [ "x${EXEEXT}" = "x.exe" ]; then
@@ -36,7 +36,6 @@ testScripts=(
     'nodehandling.py'
     'reindex.py'
     'decodescript.py'
-    'p2p-fullblocktest.py'
 );
 testScriptsExt=(
     'bipdersig-p2p.py'
@@ -80,5 +79,5 @@ if [ "x${ENABLE_BITCOIND}${ENABLE_UTILS}${ENABLE_WALLET}" = "x111" ]; then
         fi
     done
 else
-  echo "No rpc tests to run. Wallet, utils, and bitcoind must all be enabled"
+  echo "No rpc tests to run. Wallet, utils, and becoind must all be enabled"
 fi

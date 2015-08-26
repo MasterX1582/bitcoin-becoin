@@ -1,0 +1,33 @@
+# /etc/conf.d/becoind: config file for /etc/init.d/becoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/becoin/becoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/becoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/becoind.pid"
+
+# Where to write becoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/becoind"
+
+# User and group to own becoind process
+#BITCOIND_USER="becoin"
+#BITCOIND_GROUP="becoin"
+
+# Path to becoind executable
+#BITCOIND_BIN="/usr/bin/becoind"
+
+# Nice value to run becoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for becoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60

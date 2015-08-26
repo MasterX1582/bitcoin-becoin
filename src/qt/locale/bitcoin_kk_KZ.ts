@@ -85,7 +85,7 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BeCoinGUI</name>
     <message>
         <source>&amp;Transactions</source>
         <translation>&amp;Транзакциялар</translation>
@@ -107,7 +107,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>BeCoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -417,7 +417,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>becoin-core</name>
     <message>
         <source>Information</source>
         <translation>Информация</translation>

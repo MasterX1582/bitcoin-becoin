@@ -1,10 +1,10 @@
-// Copyright (c) 2011-2013 The Bitcoin Core developers
+// Copyright (c) 2011-2013 The BeCoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#define BOOST_TEST_MODULE Bitcoin Test Suite
+#define BOOST_TEST_MODULE BeCoin Test Suite
 
-#include "test_bitcoin.h"
+#include "test_becoin.h"
 
 #include "chainparams.h"
 #include "consensus/consensus.h"
@@ -53,7 +53,7 @@ TestingSetup::TestingSetup(CBaseChainParams::Network network) : BasicTestingSetu
         bitdb.MakeMock();
 #endif
         ClearDatadirCache();
-        pathTemp = GetTempPath() / strprintf("test_bitcoin_%lu_%i", (unsigned long)GetTime(), (int)(GetRand(100000)));
+        pathTemp = GetTempPath() / strprintf("test_becoin_%lu_%i", (unsigned long)GetTime(), (int)(GetRand(100000)));
         boost::filesystem::create_directories(pathTemp);
         mapArgs["-datadir"] = pathTemp.string();
         pblocktree = new CBlockTreeDB(1 << 20, true);

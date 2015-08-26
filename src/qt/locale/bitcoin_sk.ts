@@ -66,12 +66,12 @@
         <translation>Adresa prijatia</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú Vaše Bitcoin adresy pre posielanie platieb. Vždy skontrolujte množstvo a prijímaciu adresu pred poslaním coins.</translation>
+        <source>These are your BeCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú Vaše BeCoin adresy pre posielanie platieb. Vždy skontrolujte množstvo a prijímaciu adresu pred poslaním coins.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Bitcoin adresy pre prijímanie platieb. Odporúča sa použiť novú prijímaciu adresu pre každú transakciu.</translation>
+        <source>These are your BeCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše BeCoin adresy pre prijímanie platieb. Odporúča sa použiť novú prijímaciu adresu pre každú transakciu.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -213,7 +213,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BeCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Podpísať &amp;správu...</translation>
@@ -287,8 +287,8 @@
         <translation>Otvoriť &amp;URI...</translation>
     </message>
     <message>
-        <source>Bitcoin Core client</source>
-        <translation>Bitcoin Core klient</translation>
+        <source>BeCoin Core client</source>
+        <translation>BeCoin Core klient</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -299,8 +299,8 @@
         <translation>Preindexúvam bloky na disku...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Poslať bitcoins na adresu</translation>
+        <source>Send coins to a BeCoin address</source>
+        <translation>Poslať becoins na adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -323,8 +323,8 @@
         <translation>Overiť správu</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>BeCoin</source>
+        <translation>BeCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -339,8 +339,8 @@
         <translation>&amp;Prijať</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin Core</source>
-        <translation>Zobraziť informácie o Bitcoin Core</translation>
+        <source>Show information about BeCoin Core</source>
+        <translation>Zobraziť informácie o BeCoin Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -355,12 +355,12 @@
         <translation>Zašifruj súkromné kľúče ktoré patria do vašej peňaženky</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Podpísať správu s vašou adresou Bitcoin aby ste preukázali že ju vlastníte</translation>
+        <source>Sign messages with your BeCoin addresses to prove you own them</source>
+        <translation>Podpísať správu s vašou adresou BeCoin aby ste preukázali že ju vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Overiť či správa bola podpísaná uvedenou Bitcoin adresou</translation>
+        <source>Verify messages to ensure they were signed with specified BeCoin addresses</source>
+        <translation>Overiť či správa bola podpísaná uvedenou BeCoin adresou</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -379,16 +379,16 @@
         <translation>Lišta záložiek</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Jadro Bitcoin</translation>
+        <source>BeCoin Core</source>
+        <translation>Jadro BeCoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Vyžiadať platbu (vygeneruje QR kód a bitcoin: URI)</translation>
+        <source>Request payments (generates QR codes and becoin: URIs)</source>
+        <translation>Vyžiadať platbu (vygeneruje QR kód a becoin: URI)</translation>
     </message>
     <message>
-        <source>&amp;About Bitcoin Core</source>
-        <translation>O jadre Bitcoin</translation>
+        <source>&amp;About BeCoin Core</source>
+        <translation>O jadre BeCoin</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -399,16 +399,16 @@
         <translation>Zobraziť zoznam použitých prijímacích adries a ich popisov</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Otvoriť bitcoin URI alebo výzvu k platbe</translation>
+        <source>Open a becoin: URI or payment request</source>
+        <translation>Otvoriť becoin URI alebo výzvu k platbe</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Možnosti príkazového riadku</translation>
     </message>
     <message>
-        <source>Show the Bitcoin Core help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Zobraziť pomocnú správu od Bitcoin Jadra pre získanie zoznamu dostupných možností príkazového riadku</translation>
+        <source>Show the BeCoin Core help message to get a list with possible BeCoin command-line options</source>
+        <translation>Zobraziť pomocnú správu od BeCoin Jadra pre získanie zoznamu dostupných možností príkazového riadku</translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -728,8 +728,8 @@
         <translation>Vložená adresa "%1" sa už nachádza v adresári.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Vložená adresa "%1" nieje platnou adresou bitcoin.</translation>
+        <source>The entered address "%1" is not a valid BeCoin address.</source>
+        <translation>Vložená adresa "%1" nieje platnou adresou becoin.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -766,8 +766,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Jadro Bitcoin</translation>
+        <source>BeCoin Core</source>
+        <translation>Jadro BeCoin</translation>
     </message>
     <message>
         <source>version</source>
@@ -778,8 +778,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Bitcoin Core</source>
-        <translation>O jadre Bitcoin</translation>
+        <source>About BeCoin Core</source>
+        <translation>O jadre BeCoin</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -801,16 +801,16 @@
         <translation>Vitajte</translation>
     </message>
     <message>
-        <source>Welcome to Bitcoin Core.</source>
-        <translation>Vitajte v jadre Bitcoin.</translation>
+        <source>Welcome to BeCoin Core.</source>
+        <translation>Vitajte v jadre BeCoin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Bitcoin Core will store its data.</source>
-        <translation>Keďže spúštate program prvý krát, môžte si vybrať kde bude Bitcoin Jadro ukladať svoje dáta.</translation>
+        <source>As this is the first time the program is launched, you can choose where BeCoin Core will store its data.</source>
+        <translation>Keďže spúštate program prvý krát, môžte si vybrať kde bude BeCoin Jadro ukladať svoje dáta.</translation>
     </message>
     <message>
-        <source>Bitcoin Core will download and store a copy of the Bitcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Jadro Bitcoin stiahne zo siete a uloží kópiu Bitcoin blockchain. Aspoň %1GB dát bude uložených v tomto priečinku a časom porastie. Peňaženka bude tiež uložená v tomto priečinku.</translation>
+        <source>BeCoin Core will download and store a copy of the BeCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Jadro BeCoin stiahne zo siete a uloží kópiu BeCoin blockchain. Aspoň %1GB dát bude uložených v tomto priečinku a časom porastie. Peňaženka bude tiež uložená v tomto priečinku.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -821,8 +821,8 @@
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Jadro Bitcoin</translation>
+        <source>BeCoin Core</source>
+        <translation>Jadro BeCoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -935,16 +935,16 @@
         <translation>Minúť nepotvrdený výdavok</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvorit port pre Bitcoin na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
+        <source>Automatically open the BeCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvorit port pre BeCoin na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapovať port pomocou &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Pripojiť do siete Bitcoin cez proxy server SOCKS5.</translation>
+        <source>Connect to the BeCoin network through a SOCKS5 proxy.</source>
+        <translation>Pripojiť do siete BeCoin cez proxy server SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -992,7 +992,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Zvoľte ako deliť bitcoin pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
+        <translation>Zvoľte ako deliť becoin pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1038,8 +1038,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou Bitcoin po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BeCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou BeCoin po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1101,8 +1101,8 @@
         <translation>Chyba pri vyžiadaní platby</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Nedá sa spustiť obslužný program bitcoin: click-to-pay zaplatiť kliknutím</translation>
+        <source>Cannot start becoin: click-to-pay handler</source>
+        <translation>Nedá sa spustiť obslužný program becoin: click-to-pay zaplatiť kliknutím</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1155,8 +1155,8 @@
         <translation>Suma</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Zadajte bitcoin adresu (napr. %1)</translation>
+        <source>Enter a BeCoin address (e.g. %1)</source>
+        <translation>Zadajte becoin adresu (napr. %1)</translation>
     </message>
     <message>
         <source>%1 h</source>
@@ -1404,8 +1404,8 @@
         <translation>Znovu použiť jestvujúcu prijímaciu adresu (neodporúča sa)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
-        <translation>Pridať voliteľnú správu k výzve na zaplatenie, ktorá sa zobrazí keď bude výzva otvorená. Poznámka: Správa nebude poslaná s platbou cez sieť Bitcoin.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the BeCoin network.</source>
+        <translation>Pridať voliteľnú správu k výzve na zaplatenie, ktorá sa zobrazí keď bude výzva otvorená. Poznámka: Správa nebude poslaná s platbou cez sieť BeCoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1554,7 +1554,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Bitcoins</translation>
+        <translation>Poslať BeCoins</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1629,7 +1629,7 @@
         <translation>spolu aspoň</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for becoin transactions than the network can process.</source>
         <translation>Zaplatenie len minimálneho poplatku je v poriadku, pokiaľ existuje menej transakcií ako miesta v blokoch. Uvedomte si však, že ak bude vyšší dopyt po transakciách ako dokáže sieť spracovať, môže byť vaša transakcia odsúvaná a nepotvrdená donekonečna.</translation>
     </message>
     <message>
@@ -1702,7 +1702,7 @@
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Potvrdiť odoslanie bitcoins</translation>
+        <translation>Potvrdiť odoslanie becoins</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -1769,8 +1769,8 @@
         <translation>Zaplatiť minimálny poplatok %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Varovanie: Nesprávna Bitcoin adresa</translation>
+        <source>Warning: Invalid BeCoin address</source>
+        <translation>Varovanie: Nesprávna BeCoin adresa</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1844,8 +1844,8 @@
         <translation>Vložte popis pre túto adresu aby sa uložila do zoznamu použitých adries</translation>
     </message>
     <message>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation>Správa ktorá bola pripojená k bitcoin: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Bitcoin.</translation>
+        <source>A message that was attached to the becoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the BeCoin network.</source>
+        <translation>Správa ktorá bola pripojená k becoin: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť BeCoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1859,8 +1859,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Bitcoin Core is shutting down...</source>
-        <translation>Jadro Bitcoin sa ukončuje...</translation>
+        <source>BeCoin Core is shutting down...</source>
+        <translation>Jadro BeCoin sa ukončuje...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1906,7 +1906,7 @@
         <translation>Kopírovať práve zvolenú adresu do systémového klipbordu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this BeCoin address</source>
         <translation>Podpíšte správu aby ste dokázali že vlastníte túto adresu</translation>
     </message>
     <message>
@@ -1926,8 +1926,8 @@
         <translation>Overiť správu...</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Overím správy sa uistiť že bola podpísaná označenou Bitcoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified BeCoin address</source>
+        <translation>Overím správy sa uistiť že bola podpísaná označenou BeCoin adresou</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1993,12 +1993,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Jadro Bitcoin</translation>
+        <source>BeCoin Core</source>
+        <translation>Jadro BeCoin</translation>
     </message>
     <message>
-        <source>The Bitcoin Core developers</source>
-        <translation>Vývojári jadra Bitcoin</translation>
+        <source>The BeCoin Core developers</source>
+        <translation>Vývojári jadra BeCoin</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2394,7 +2394,7 @@
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Bitcoins</translation>
+        <translation>Poslať BeCoins</translation>
     </message>
 </context>
 <context>
@@ -2433,7 +2433,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>becoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Možnosti:</translation>
@@ -2488,11 +2488,11 @@
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Toto je pred-testovacia verzia - použitie je na vlastné riziko - nepoužívajte na tvorbu bitcoin ani obchodovanie.</translation>
+        <translation>Toto je pred-testovacia verzia - použitie je na vlastné riziko - nepoužívajte na tvorbu becoin ani obchodovanie.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Bitcoin Core is probably already running.</source>
-        <translation>Nepodarilo sa pripojiť na %s na tomto počítači. Bitcoin Jadro je už pravdepodobne spustené.</translation>
+        <source>Unable to bind to %s on this computer. BeCoin Core is probably already running.</source>
+        <translation>Nepodarilo sa pripojiť na %s na tomto počítači. BeCoin Jadro je už pravdepodobne spustené.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -2641,8 +2641,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Importuje bloky z externého súboru blk000??.dat</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Bitcoin Core is probably already running.</source>
-        <translation>Neviem uzamknúť data adresár %s. Jadro Bitcoin je pravdepodobne už spustené.</translation>
+        <source>Cannot obtain a lock on data directory %s. BeCoin Core is probably already running.</source>
+        <translation>Neviem uzamknúť data adresár %s. Jadro BeCoin je pravdepodobne už spustené.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -2653,12 +2653,12 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Vykonať príkaz po prijatí patričného varovania alebo uvidíme veľmi dlhé rozdvojenie siete (%s v cmd je nahradené správou)</translation>
     </message>
     <message>
-        <source>Fees (in BTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Poplatky (v BTC/Kb) nižšie ako toľkoto sa považujú za nulové pri postupovaní transakcií (predvolené: %s)</translation>
+        <source>Fees (in BEF/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Poplatky (v BEF/Kb) nižšie ako toľkoto sa považujú za nulové pri postupovaní transakcií (predvolené: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BTC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Poplatky (v BTC/Kb) nižšie ako toľkoto sa považujú za nulové pri vytváraní transakcií (predvolené: %s)</translation>
+        <source>Fees (in BEF/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Poplatky (v BEF/Kb) nižšie ako toľkoto sa považujú za nulové pri vytváraní transakcií (predvolené: %s)</translation>
     </message>
     <message>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
@@ -2673,12 +2673,12 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Pripojiť cez proxy server SOCKS5</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin Core</source>
-        <translation>Chyba pri čítaní wallet.dat: Peňaženka vyžaduje vyššiu verziu Jadra Bitcoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of BeCoin Core</source>
+        <translation>Chyba pri čítaní wallet.dat: Peňaženka vyžaduje vyššiu verziu Jadra BeCoin</translation>
     </message>
     <message>
-        <source>Fee (in BTC/kB) to add to transactions you send (default: %s)</source>
-        <translation>Poplatok (v BTC/kB), ktorý sa pridá k transakciám, ktoré odosielate (predvolený: %s)</translation>
+        <source>Fee (in BEF/kB) to add to transactions you send (default: %s)</source>
+        <translation>Poplatok (v BEF/kB), ktorý sa pridá k transakciám, ktoré odosielate (predvolený: %s)</translation>
     </message>
     <message>
         <source>Information</source>
@@ -2693,8 +2693,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Neplatná suma pre -mintxfee=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Možnosti RPC SSL: (Pozri v Bitcoin Wiki pokyny pre SSL nastavenie)</translation>
+        <source>RPC SSL options: (see the BeCoin Wiki for SSL setup instructions)</source>
+        <translation>Možnosti RPC SSL: (Pozri v BeCoin Wiki pokyny pre SSL nastavenie)</translation>
     </message>
     <message>
         <source>RPC server options:</source>

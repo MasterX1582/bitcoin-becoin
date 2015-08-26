@@ -97,7 +97,7 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BeCoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Cysoni â'r rhwydwaith...</translation>
@@ -489,7 +489,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>becoin-core</name>
     <message>
         <source>Information</source>
         <translation>Gwybodaeth</translation>

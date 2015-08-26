@@ -1,0 +1,22 @@
+[Unit]
+Description=BeCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=becoin
+Group=becoin
+
+Type=forking
+PIDFile=/var/lib/becoind/becoind.pid
+ExecStart=/usr/bin/becoind -daemon -pid=/var/lib/becoind/becoind.pid \
+-conf=/etc/becoin/becoin.conf -datadir=/var/lib/becoind -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

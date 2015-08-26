@@ -1,4 +1,4 @@
-// Copyright (c) 2009-2014 The Bitcoin Core developers
+// Copyright (c) 2009-2014 The BeCoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -187,7 +187,7 @@ void PaymentServerTests::paymentServerTests()
     tempFile.close();
     QCOMPARE(PaymentServer::readPaymentRequestFromFile(tempFile.fileName(), r.paymentRequest), false);
 
-    // Payment request with amount overflow (amount is set to 21000001 BTC):
+    // Payment request with amount overflow (amount is set to 21000001 BEF):
     data = DecodeBase64(paymentrequest5_cert2_BASE64);
     byteArray = QByteArray((const char*)&data[0], data.size());
     r.paymentRequest.parse(byteArray);

@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2014 The Bitcoin Core developers
+// Copyright (c) 2009-2014 The BeCoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -45,7 +45,7 @@
 using namespace std;
 
 #if defined(NDEBUG)
-# error "Bitcoin cannot be compiled without assertions."
+# error "BeCoin cannot be compiled without assertions."
 #endif
 
 /**
@@ -75,7 +75,7 @@ uint64_t nPruneTarget = 0;
 bool fAlerts = DEFAULT_ALERTS;
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying and mining) */
-CFeeRate minRelayTxFee = CFeeRate(1000);
+CFeeRate minRelayTxFee = CFeeRate(500);
 
 CTxMemPool mempool(::minRelayTxFee);
 
@@ -97,7 +97,7 @@ static void CheckBlockIndex();
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Bitcoin Signed Message:\n";
+const string strMessageMagic = "BeCoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -1085,8 +1085,11 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     if (halvings >= 64)
         return 0;
 
-    CAmount nSubsidy = 50 * COIN;
-    // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
+    CAmount nSubsidy = 159 * COIN;
+	// block reward within first 1000 blocks = 159000
+	if(nHeight < 1000) CAmount nSubsidy = 159000;
+	
+    // Subsidy is cut in half every 159,000 blocks.s
     nSubsidy >>= halvings;
     return nSubsidy;
 }
@@ -1600,7 +1603,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("bitcoin-scriptch");
+    RenameThread("becoin-scriptch");
     scriptcheckqueue.Thread();
 }
 

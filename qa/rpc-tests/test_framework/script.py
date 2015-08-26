@@ -1,7 +1,7 @@
 #
 # script.py
 #
-# This file is modified from python-bitcoinlib.
+# This file is modified from python-becoinlib.
 #
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -27,7 +27,7 @@ if sys.version > '3':
 import copy
 import struct
 
-from test_framework.bignum import bn2vch
+import test_framework.bignum
 
 MAX_SCRIPT_SIZE = 10000
 MAX_SCRIPT_ELEMENT_SIZE = 520
@@ -664,7 +664,7 @@ class CScript(bytes):
             elif other == -1:
                 other = bytes(bchr(OP_1NEGATE))
             else:
-                other = CScriptOp.encode_op_pushdata(bn2vch(other))
+                other = CScriptOp.encode_op_pushdata(bignum.bn2vch(other))
         elif isinstance(other, (bytes, bytearray)):
             other = CScriptOp.encode_op_pushdata(other)
         return other

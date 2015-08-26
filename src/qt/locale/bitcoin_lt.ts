@@ -177,7 +177,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BeCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Pasirašyti ži&amp;nutę...</translation>
@@ -247,8 +247,8 @@
         <translation>&amp;Gaunami adresai...</translation>
     </message>
     <message>
-        <source>Bitcoin Core client</source>
-        <translation>Bitcoin Core klientas</translation>
+        <source>BeCoin Core client</source>
+        <translation>BeCoin Core klientas</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -259,8 +259,8 @@
         <translation>Blokai iš naujo indeksuojami...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Siųsti monetas Bitcoin adresui</translation>
+        <source>Send coins to a BeCoin address</source>
+        <translation>Siųsti monetas BeCoin adresui</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -283,8 +283,8 @@
         <translation>&amp;Tikrinti žinutę...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>BeCoin</source>
+        <translation>BeCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -299,8 +299,8 @@
         <translation>&amp;Gauti</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin Core</source>
-        <translation>Rodyti informaciją apie Bitcoin Core</translation>
+        <source>Show information about BeCoin Core</source>
+        <translation>Rodyti informaciją apie BeCoin Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -331,12 +331,12 @@
         <translation>Kortelių įrankinė</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin branduolys</translation>
+        <source>BeCoin Core</source>
+        <translation>BeCoin branduolys</translation>
     </message>
     <message>
-        <source>&amp;About Bitcoin Core</source>
-        <translation>&amp;Apie Bitcoin Core</translation>
+        <source>&amp;About BeCoin Core</source>
+        <translation>&amp;Apie BeCoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -564,8 +564,8 @@
         <translation>Įvestas adresas „%1“ jau yra adresų knygelėje.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Įvestas adresas „%1“ nėra galiojantis Bitcoin adresas.</translation>
+        <source>The entered address "%1" is not a valid BeCoin address.</source>
+        <translation>Įvestas adresas „%1“ nėra galiojantis BeCoin adresas.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -586,16 +586,16 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin branduolys</translation>
+        <source>BeCoin Core</source>
+        <translation>BeCoin branduolys</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versija</translation>
     </message>
     <message>
-        <source>About Bitcoin Core</source>
-        <translation>Apie Bitcoin Core</translation>
+        <source>About BeCoin Core</source>
+        <translation>Apie BeCoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -617,12 +617,12 @@
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to Bitcoin Core.</source>
-        <translation>Sveiki atvykę į Bitcoin Core.</translation>
+        <source>Welcome to BeCoin Core.</source>
+        <translation>Sveiki atvykę į BeCoin Core.</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin branduolys</translation>
+        <source>BeCoin Core</source>
+        <translation>BeCoin branduolys</translation>
     </message>
     <message>
         <source>Error</source>
@@ -647,8 +647,8 @@
         <translation>&amp;Tinklas</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatiškai atidaryti Bitcoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
+        <source>Automatically open the BeCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatiškai atidaryti BeCoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1098,7 +1098,7 @@
         <translation>Įveskite pranešimą, kurį norite pasirašyti čia</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this BeCoin address</source>
         <translation>Registruotis žinute įrodymuii, kad turite šį adresą</translation>
     </message>
     <message>
@@ -1114,8 +1114,8 @@
         <translation>&amp;Patikrinti žinutę</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Bitcoin adresas</translation>
+        <source>Verify the message to ensure it was signed with the specified BeCoin address</source>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas BeCoin adresas</translation>
     </message>
     <message>
         <source>Click "Sign Message" to generate signature</source>
@@ -1165,8 +1165,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin branduolys</translation>
+        <source>BeCoin Core</source>
+        <translation>BeCoin branduolys</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -1529,7 +1529,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>becoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Parinktys:</translation>

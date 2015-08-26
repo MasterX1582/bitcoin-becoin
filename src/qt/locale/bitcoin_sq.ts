@@ -145,7 +145,7 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BeCoinGUI</name>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Duke u sinkronizuar me rrjetin...</translation>
@@ -179,8 +179,8 @@
         <translation>Ndrysho frazkalimin e përdorur per enkriptimin e portofolit</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>BeCoin</source>
+        <translation>BeCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -215,11 +215,11 @@
         <translation>Shiriti i mjeteve</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Berthama Bitcoin</translation>
+        <source>BeCoin Core</source>
+        <translation>Berthama BeCoin</translation>
     </message>
     <message>
-        <source>&amp;About Bitcoin Core</source>
+        <source>&amp;About BeCoin Core</source>
         <translation>Rreth Berthames Bitkoin</translation>
     </message>
     <message>
@@ -354,15 +354,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Berthama Bitcoin</translation>
+        <source>BeCoin Core</source>
+        <translation>Berthama BeCoin</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versioni</translation>
     </message>
     <message>
-        <source>About Bitcoin Core</source>
+        <source>About BeCoin Core</source>
         <translation>Rreth Berthames Bitkoin</translation>
     </message>
     </context>
@@ -373,12 +373,12 @@
         <translation>Miresevini</translation>
     </message>
     <message>
-        <source>Welcome to Bitcoin Core.</source>
-        <translation>Miresevini ne Berthamen Bitcoin</translation>
+        <source>Welcome to BeCoin Core.</source>
+        <translation>Miresevini ne Berthamen BeCoin</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Berthama Bitcoin</translation>
+        <source>BeCoin Core</source>
+        <translation>Berthama BeCoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -565,8 +565,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Berthama Bitcoin</translation>
+        <source>BeCoin Core</source>
+        <translation>Berthama BeCoin</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -725,7 +725,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>becoin-core</name>
     <message>
         <source>Information</source>
         <translation>Informacion</translation>

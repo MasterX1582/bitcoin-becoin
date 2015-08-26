@@ -66,12 +66,12 @@
         <translation>Adres odbiorczy</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tutaj znajdują się adresy Bitcoin na które wysyłasz płatności. Zawsze sprawdzaj ilość i adres odbiorcy przed wysyłką monet.</translation>
+        <source>These are your BeCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tutaj znajdują się adresy BeCoin na które wysyłasz płatności. Zawsze sprawdzaj ilość i adres odbiorcy przed wysyłką monet.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To twoje adresy Bitcoin, na które otrzymujesz płatności. Zaleca się używanie nowych adresów odbiorczych dla każdej transakcji.</translation>
+        <source>These are your BeCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To twoje adresy BeCoin, na które otrzymujesz płatności. Zaleca się używanie nowych adresów odbiorczych dla każdej transakcji.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -213,7 +213,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BeCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Podpisz wiado&amp;mość...</translation>
@@ -287,8 +287,8 @@
         <translation>Otwórz URI...</translation>
     </message>
     <message>
-        <source>Bitcoin Core client</source>
-        <translation>Rdzeń klienta Bitcoin</translation>
+        <source>BeCoin Core client</source>
+        <translation>Rdzeń klienta BeCoin</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -299,8 +299,8 @@
         <translation>Ponowne indeksowanie bloków na dysku...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Wyślij monety na adres Bitcoin</translation>
+        <source>Send coins to a BeCoin address</source>
+        <translation>Wyślij monety na adres BeCoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -323,8 +323,8 @@
         <translation>&amp;Zweryfikuj wiadomość...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>BeCoin</source>
+        <translation>BeCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -339,8 +339,8 @@
         <translation>Odbie&amp;rz</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin Core</source>
-        <translation>Pokaż informacje o Rdzeniu Bitcoin</translation>
+        <source>Show information about BeCoin Core</source>
+        <translation>Pokaż informacje o Rdzeniu BeCoin</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -355,12 +355,12 @@
         <translation>Szyfruj klucze prywatne, które są w Twoim portfelu</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
+        <source>Sign messages with your BeCoin addresses to prove you own them</source>
         <translation>Podpisz wiadomości swoim adresem aby udowodnić jego posiadanie</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bitcoin addresses</source>
-        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana podanym adresem Bitcoin.</translation>
+        <source>Verify messages to ensure they were signed with specified BeCoin addresses</source>
+        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana podanym adresem BeCoin.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -379,16 +379,16 @@
         <translation>Pasek zakładek</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Rdzeń Bitcoin</translation>
+        <source>BeCoin Core</source>
+        <translation>Rdzeń BeCoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bitcoin: URIs)</source>
-        <translation>Żądaj płatności (generuje kod QR oraz bitcoin URI)</translation>
+        <source>Request payments (generates QR codes and becoin: URIs)</source>
+        <translation>Żądaj płatności (generuje kod QR oraz becoin URI)</translation>
     </message>
     <message>
-        <source>&amp;About Bitcoin Core</source>
-        <translation>&amp;O Bitcoin Core</translation>
+        <source>&amp;About BeCoin Core</source>
+        <translation>&amp;O BeCoin Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -399,16 +399,16 @@
         <translation>Pokaż listę adresów i etykiet użytych do odbierania</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Otwórz URI bitcoin: lub żądanie zapłaty</translation>
+        <source>Open a becoin: URI or payment request</source>
+        <translation>Otwórz URI becoin: lub żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Opcje linii komend</translation>
     </message>
     <message>
-        <source>Show the Bitcoin Core help message to get a list with possible Bitcoin command-line options</source>
-        <translation>Pokaż pomoc Rdzenia Bitcoin, aby zobaczyć listę wszystkich opcji linii poleceń</translation>
+        <source>Show the BeCoin Core help message to get a list with possible BeCoin command-line options</source>
+        <translation>Pokaż pomoc Rdzenia BeCoin, aby zobaczyć listę wszystkich opcji linii poleceń</translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -728,8 +728,8 @@
         <translation>Wprowadzony adres "%1" już istnieje w książce adresowej.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Wprowadzony adres "%1" nie jest poprawnym adresem Bitcoin.</translation>
+        <source>The entered address "%1" is not a valid BeCoin address.</source>
+        <translation>Wprowadzony adres "%1" nie jest poprawnym adresem BeCoin.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -766,8 +766,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Rdzeń Bitcoin</translation>
+        <source>BeCoin Core</source>
+        <translation>Rdzeń BeCoin</translation>
     </message>
     <message>
         <source>version</source>
@@ -778,8 +778,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Bitcoin Core</source>
-        <translation>O Bitcoin Core</translation>
+        <source>About BeCoin Core</source>
+        <translation>O BeCoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -801,16 +801,16 @@
         <translation>Witaj</translation>
     </message>
     <message>
-        <source>Welcome to Bitcoin Core.</source>
-        <translation>Witam w Bitcoin Core</translation>
+        <source>Welcome to BeCoin Core.</source>
+        <translation>Witam w BeCoin Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Bitcoin Core will store its data.</source>
-        <translation>Ponieważ jest to pierwsze uruchomienie programu, możesz wybrać gdzie Bitcoin Core będzie przechowywał swoje dane.</translation>
+        <source>As this is the first time the program is launched, you can choose where BeCoin Core will store its data.</source>
+        <translation>Ponieważ jest to pierwsze uruchomienie programu, możesz wybrać gdzie BeCoin Core będzie przechowywał swoje dane.</translation>
     </message>
     <message>
-        <source>Bitcoin Core will download and store a copy of the Bitcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Program pobierze i będzie przechowywał kopię łańcucha bloków Bitcoin. W wybranym katalogu musi być przynajmniej %1GB miejsca, a z czasem ilość danych będzie rosła. Portfel będzie przechowywany w tym samym katalogu.</translation>
+        <source>BeCoin Core will download and store a copy of the BeCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Program pobierze i będzie przechowywał kopię łańcucha bloków BeCoin. W wybranym katalogu musi być przynajmniej %1GB miejsca, a z czasem ilość danych będzie rosła. Portfel będzie przechowywany w tym samym katalogu.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -821,8 +821,8 @@
         <translation>Użyj wybranego folderu dla danych</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Rdzeń Bitcoin</translation>
+        <source>BeCoin Core</source>
+        <translation>Rdzeń BeCoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -927,16 +927,16 @@
         <translation>Wydaj niepotwierdzoną re&amp;sztę</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatycznie otwiera port klienta Bitcoin na routerze. Ta opcja dzieła tylko jeśli twój router wspiera UPnP i jest ono włączone.</translation>
+        <source>Automatically open the BeCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatycznie otwiera port klienta BeCoin na routerze. Ta opcja dzieła tylko jeśli twój router wspiera UPnP i jest ono włączone.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapuj port używając &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Bitcoin network through a SOCKS5 proxy.</source>
-        <translation>Połącz się z siecią Bitcoin poprzez proxy SOCKS5.</translation>
+        <source>Connect to the BeCoin network through a SOCKS5 proxy.</source>
+        <translation>Połącz się z siecią BeCoin poprzez proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1030,8 +1030,8 @@
         <translation>Formularz</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Wyświetlana informacja może być nieaktualna. Twój portfel synchronizuje się automatycznie z siecią bitcoin, zaraz po tym jak uzyskano połączenie, ale proces ten nie został jeszcze ukończony.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BeCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Wyświetlana informacja może być nieaktualna. Twój portfel synchronizuje się automatycznie z siecią becoin, zaraz po tym jak uzyskano połączenie, ale proces ten nie został jeszcze ukończony.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1129,8 +1129,8 @@
         <translation>Błąd żądania płatności</translation>
     </message>
     <message>
-        <source>Cannot start bitcoin: click-to-pay handler</source>
-        <translation>Nie można uruchomić protokołu bitcoin: kliknij-by-zapłacić</translation>
+        <source>Cannot start becoin: click-to-pay handler</source>
+        <translation>Nie można uruchomić protokołu becoin: kliknij-by-zapłacić</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1171,8 +1171,8 @@
         <translation>Kwota</translation>
     </message>
     <message>
-        <source>Enter a Bitcoin address (e.g. %1)</source>
-        <translation>Wprowadź adres Bitcoin (np. %1)</translation>
+        <source>Enter a BeCoin address (e.g. %1)</source>
+        <translation>Wprowadź adres BeCoin (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1785,8 +1785,8 @@
         <translation>Płac tylko minimalna opłatę %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Ostrzeżenie: nieprawidłowy adres Bitcoin</translation>
+        <source>Warning: Invalid BeCoin address</source>
+        <translation>Ostrzeżenie: nieprawidłowy adres BeCoin</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1871,8 +1871,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Bitcoin Core is shutting down...</source>
-        <translation>Bitcoin Core się zamyka...</translation>
+        <source>BeCoin Core is shutting down...</source>
+        <translation>BeCoin Core się zamyka...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1918,7 +1918,7 @@
         <translation>Kopiuje aktualny podpis do schowka systemowego</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bitcoin address</source>
+        <source>Sign the message to prove you own this BeCoin address</source>
         <translation>Podpisz wiadomość aby dowieść, że ten adres jest twój</translation>
     </message>
     <message>
@@ -1938,8 +1938,8 @@
         <translation>&amp;Zweryfikuj wiadomość</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
-        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana odpowiednim adresem Bitcoin.</translation>
+        <source>Verify the message to ensure it was signed with the specified BeCoin address</source>
+        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana odpowiednim adresem BeCoin.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2005,12 +2005,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Rdzeń Bitcoin</translation>
+        <source>BeCoin Core</source>
+        <translation>Rdzeń BeCoin</translation>
     </message>
     <message>
-        <source>The Bitcoin Core developers</source>
-        <translation>Deweloperzy Bitcoin Core</translation>
+        <source>The BeCoin Core developers</source>
+        <translation>Deweloperzy BeCoin Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2449,7 +2449,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>becoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Opcje:</translation>
@@ -2499,8 +2499,8 @@
         <translation>To jest testowa wersja - używaj na własne ryzyko - nie używaj do wykopywania oraz przy aplikacjach kupieckich</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Bitcoin Core is probably already running.</source>
-        <translation>Nie można przywiązać z portem %s na tym komputerze. Bitcoin Core prawdopodobnie już działa.</translation>
+        <source>Unable to bind to %s on this computer. BeCoin Core is probably already running.</source>
+        <translation>Nie można przywiązać z portem %s na tym komputerze. BeCoin Core prawdopodobnie już działa.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -2663,8 +2663,8 @@
         <translation>Napotkano błąd podczas ustawiania adres RPC %s port %u dla nasłuchiwania: %s</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Bitcoin Core is probably already running.</source>
-        <translation>Nie można uzyskać blokady na katalogu z danymi %s. Rdzeń Bitcoin najprawdopodobniej jest już uruchomiony.</translation>
+        <source>Cannot obtain a lock on data directory %s. BeCoin Core is probably already running.</source>
+        <translation>Nie można uzyskać blokady na katalogu z danymi %s. Rdzeń BeCoin najprawdopodobniej jest już uruchomiony.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -2711,12 +2711,12 @@
         <translation>Połącz przez SOCKS5 proxy</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Bitcoin Core Developers</source>
-        <translation>Copyright (C) 2009-%i The Bitcoin Core Developers</translation>
+        <source>Copyright (C) 2009-%i The BeCoin Core Developers</source>
+        <translation>Copyright (C) 2009-%i The BeCoin Core Developers</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bitcoin Core</source>
-        <translation>Błąd ładowania wallet.dat: Portfel wymaga nowszej wersji Bitcoin Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of BeCoin Core</source>
+        <translation>Błąd ładowania wallet.dat: Portfel wymaga nowszej wersji BeCoin Core</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -2727,16 +2727,16 @@
         <translation>Błąd: Znaleziono nieprawidłowy argument -tor, użyj -onion.</translation>
     </message>
     <message>
-        <source>Fee (in BTC/kB) to add to transactions you send (default: %s)</source>
-        <translation>Prowizja (w BTC za kB) dodawana do wysyłanej transakcji (domyślnie: %s)</translation>
+        <source>Fee (in BEF/kB) to add to transactions you send (default: %s)</source>
+        <translation>Prowizja (w BEF za kB) dodawana do wysyłanej transakcji (domyślnie: %s)</translation>
     </message>
     <message>
         <source>Information</source>
         <translation>Informacja</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Bitcoin Core is shutting down.</source>
-        <translation>Wstępna kontrola poprawności nie powiodła się. Bitcoin Core wyłącza się.</translation>
+        <source>Initialization sanity check failed. BeCoin Core is shutting down.</source>
+        <translation>Wstępna kontrola poprawności nie powiodła się. BeCoin Core wyłącza się.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -2759,8 +2759,8 @@
         <translation>Opcje przekaźnikowe węzła:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>Opcje RPC SSL: (odwiedź Bitcoin Wiki w celu uzyskania instrukcji)</translation>
+        <source>RPC SSL options: (see the BeCoin Wiki for SSL setup instructions)</source>
+        <translation>Opcje RPC SSL: (odwiedź BeCoin Wiki w celu uzyskania instrukcji)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -2843,8 +2843,8 @@
         <translation>Nazwa użytkownika dla połączeń JSON-RPC</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Bitcoin Core to complete</source>
-        <translation>Portfel wymaga przepisania: zrestartuj Bitcoina aby ukończyć</translation>
+        <source>Wallet needed to be rewritten: restart BeCoin Core to complete</source>
+        <translation>Portfel wymaga przepisania: zrestartuj BeCoina aby ukończyć</translation>
     </message>
     <message>
         <source>Warning</source>

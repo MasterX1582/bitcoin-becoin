@@ -62,12 +62,12 @@
         <translation>Naslovi za prejemanje</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To so tvoji Bitcoin naslovi za pošiljanje plačil. Vedno preveri znesek in prejemnikov naslov pred pošiljanjem kovancev.</translation>
+        <source>These are your BeCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To so tvoji BeCoin naslovi za pošiljanje plačil. Vedno preveri znesek in prejemnikov naslov pred pošiljanjem kovancev.</translation>
     </message>
     <message>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To so tvoji Bitcoin naslovi za prejemanje plačil. Priporočljivo je uporabljati nov prejemni naslov za vsako izmed transakcij.</translation>
+        <source>These are your BeCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To so tvoji BeCoin naslovi za prejemanje plačil. Priporočljivo je uporabljati nov prejemni naslov za vsako izmed transakcij.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -193,7 +193,7 @@
     </message>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BeCoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Podpiši &amp;sporočilo ...</translation>
@@ -267,8 +267,8 @@
         <translation>Odpri &amp;URI...</translation>
     </message>
     <message>
-        <source>Bitcoin Core client</source>
-        <translation>Odjemalec Bitcoin Core</translation>
+        <source>BeCoin Core client</source>
+        <translation>Odjemalec BeCoin Core</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -279,8 +279,8 @@
         <translation>Poustvarjam kazalo blokov na disku...</translation>
     </message>
     <message>
-        <source>Send coins to a Bitcoin address</source>
-        <translation>Pošlji kovance na Bitcoin naslov</translation>
+        <source>Send coins to a BeCoin address</source>
+        <translation>Pošlji kovance na BeCoin naslov</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -299,8 +299,8 @@
         <translation>Odpri razhroščevalno in diagnostično konzolo</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>BeCoin</source>
+        <translation>BeCoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -315,8 +315,8 @@
         <translation>&amp;Sprejmi</translation>
     </message>
     <message>
-        <source>Show information about Bitcoin Core</source>
-        <translation>Pokaži informacije o Bitcoin Core</translation>
+        <source>Show information about BeCoin Core</source>
+        <translation>Pokaži informacije o BeCoin Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -331,8 +331,8 @@
         <translation>Šifiraj zasebne ključe v moji denarnici</translation>
     </message>
     <message>
-        <source>Sign messages with your Bitcoin addresses to prove you own them</source>
-        <translation>Za dokaz, da ste lastniki sporočil, se podpišite z Bitcoin naslovom</translation>
+        <source>Sign messages with your BeCoin addresses to prove you own them</source>
+        <translation>Za dokaz, da ste lastniki sporočil, se podpišite z BeCoin naslovom</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -351,12 +351,12 @@
         <translation>Orodna vrstica zavihkov</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Jedro Bitcoina</translation>
+        <source>BeCoin Core</source>
+        <translation>Jedro BeCoina</translation>
     </message>
     <message>
-        <source>&amp;About Bitcoin Core</source>
-        <translation>&amp;O jedru Bitcoina</translation>
+        <source>&amp;About BeCoin Core</source>
+        <translation>&amp;O jedru BeCoina</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -367,8 +367,8 @@
         <translation>Prikaži seznam uporabljenih sprejemnih naslovov in oznak</translation>
     </message>
     <message>
-        <source>Open a bitcoin: URI or payment request</source>
-        <translation>Odpri Bitcoin: URI ali zahteva o plačilu</translation>
+        <source>Open a becoin: URI or payment request</source>
+        <translation>Odpri BeCoin: URI ali zahteva o plačilu</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -652,8 +652,8 @@
         <translation>Uredi naslov za odlive</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bitcoin address.</source>
-        <translation>Vnešeni naslov "%1" ni veljaven Bitcoin naslov.</translation>
+        <source>The entered address "%1" is not a valid BeCoin address.</source>
+        <translation>Vnešeni naslov "%1" ni veljaven BeCoin naslov.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -690,8 +690,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Jedro Bitcoina</translation>
+        <source>BeCoin Core</source>
+        <translation>Jedro BeCoina</translation>
     </message>
     <message>
         <source>version</source>
@@ -702,8 +702,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Bitcoin Core</source>
-        <translation>O jedru Bitcoina</translation>
+        <source>About BeCoin Core</source>
+        <translation>O jedru BeCoina</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -725,16 +725,16 @@
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Welcome to Bitcoin Core.</source>
-        <translation>Dobrodošli v jedru Bitcoina</translation>
+        <source>Welcome to BeCoin Core.</source>
+        <translation>Dobrodošli v jedru BeCoina</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Bitcoin Core will store its data.</source>
-        <translation>Program poganjaš prvič. Izberi kje bo Bitcoin Core shranjeval svoje podatke.</translation>
+        <source>As this is the first time the program is launched, you can choose where BeCoin Core will store its data.</source>
+        <translation>Program poganjaš prvič. Izberi kje bo BeCoin Core shranjeval svoje podatke.</translation>
     </message>
     <message>
-        <source>Bitcoin Core will download and store a copy of the Bitcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Bitcoin Core bo prenesel in shranil kopijo Bitcoin verige blokov. V izbrano mapo bo shranjenih vsaj %1 GB podatkov, ta količina pa bo sčasoma še naraščala. Denarnica bo prav tako shranjena v to mapo.</translation>
+        <source>BeCoin Core will download and store a copy of the BeCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>BeCoin Core bo prenesel in shranil kopijo BeCoin verige blokov. V izbrano mapo bo shranjenih vsaj %1 GB podatkov, ta količina pa bo sčasoma še naraščala. Denarnica bo prav tako shranjena v to mapo.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -745,8 +745,8 @@
         <translation>Uporabi to mapo za shranjevanje podatkov:</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Jedro Bitcoina</translation>
+        <source>BeCoin Core</source>
+        <translation>Jedro BeCoina</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -831,8 +831,8 @@
         <translation>Omogoči Coin &amp; Control funkcijo</translation>
     </message>
     <message>
-        <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avtomatično odpri vrata Bitcoin odjemalca na usmerjevalniku. To deluje samo, če vaš usmerjevalnik podpira UPnP in je omogočen.</translation>
+        <source>Automatically open the BeCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avtomatično odpri vrata BeCoin odjemalca na usmerjevalniku. To deluje samo, če vaš usmerjevalnik podpira UPnP in je omogočen.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -902,8 +902,8 @@
         <translation>Oblika</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bitcoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazanim podatkom je lahko potekel rok. Vaša denarnica bo po vzpostavitvi povezave samodejno sinhronizirana z Bitcoin omrežjem, ampak ta proces še ni bil zaključen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BeCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazanim podatkom je lahko potekel rok. Vaša denarnica bo po vzpostavitvi povezave samodejno sinhronizirana z BeCoin omrežjem, ampak ta proces še ni bil zaključen.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1389,8 +1389,8 @@
         <translation>Količina presega vaše dobroimetje</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bitcoin address</source>
-        <translation>Opozorilo: Neveljaven Bitcoin naslov</translation>
+        <source>Warning: Invalid BeCoin address</source>
+        <translation>Opozorilo: Neveljaven BeCoin naslov</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1553,8 +1553,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Jedro Bitcoina</translation>
+        <source>BeCoin Core</source>
+        <translation>Jedro BeCoina</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -1941,7 +1941,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>becoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Možnosti:</translation>

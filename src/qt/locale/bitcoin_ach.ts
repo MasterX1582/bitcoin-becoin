@@ -9,7 +9,7 @@
     <name>AskPassphraseDialog</name>
     </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>BeCoinGUI</name>
     </context>
 <context>
     <name>ClientModel</name>
@@ -105,6 +105,6 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>becoin-core</name>
     </context>
 </TS>

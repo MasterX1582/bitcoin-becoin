@@ -1,0 +1,3 @@
+debian/manpages/becoind.1
+debian/manpages/becoin.conf.5
+debian/manpages/becoin-cli.1

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BeCoin
+Comment=BeCoin P2P Cryptocurrency
+Comment[fr]=BeCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BeCoin, eşten eşe kriptografik sanal para birimi
+Exec=becoin-qt %u
+Terminal=false
+Type=Application
+Icon=becoin128
+MimeType=x-scheme-handler/becoin;
+Categories=Office;Finance;

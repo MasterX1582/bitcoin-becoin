@@ -244,16 +244,16 @@ bool UniValue::read(const char *raw)
     bool expectColon = false;
     vector<UniValue*> stack;
 
-    string tokenVal;
-    unsigned int consumed;
     enum jtokentype tok = JTOK_NONE;
     enum jtokentype last_tok = JTOK_NONE;
-    do {
+    while (1) {
         last_tok = tok;
 
+        string tokenVal;
+        unsigned int consumed;
         tok = getJsonToken(tokenVal, consumed, raw);
         if (tok == JTOK_NONE || tok == JTOK_ERR)
-            return false;
+            break;
         raw += consumed;
 
         switch (tok) {
@@ -377,11 +377,9 @@ bool UniValue::read(const char *raw)
         default:
             return false;
         }
-    } while (!stack.empty ());
+    }
 
-    /* Check that nothing follows the initial construct (parsed above).  */
-    tok = getJsonToken(tokenVal, consumed, raw);
-    if (tok != JTOK_NONE)
+    if (stack.size() != 0)
         return false;
 
     return true;

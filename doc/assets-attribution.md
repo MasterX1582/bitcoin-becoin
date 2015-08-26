@@ -1,4 +1,4 @@
-The following is a list of assets used in the bitcoin source and their proper attribution.
+The following is a list of assets used in the becoin source and their proper attribution.
 
 [Typicons/Stephen Hutchings](http://typicons.com)
 -----------------------
@@ -40,7 +40,7 @@ Other
 
 ### Info
 * Designer: Jonas Schnelli, Bitboy, Stephen Hutchings, Marco Falke
-* Bitcoin Icon: Based on the original bitcoin logo from Bitboy
+* BeCoin Icon: Based on the original becoin logo from Bitboy
 * Network connection icon: Inspired by flow-merge.svg from Stephen Hutchings
 * Some icons are based on Stephan Hutchings Typicons
 * License: MIT
@@ -48,9 +48,9 @@ Other
 ### Assets Used
     src/qt/res/icons/about.png
     src/qt/res/icons/about_qt.png,
-    src/qt/res/icons/bitcoin.icns
-    src/qt/res/icons/bitcoin.ico,
-    src/qt/res/icons/bitcoin.png
+    src/qt/res/icons/becoin.icns
+    src/qt/res/icons/becoin.ico,
+    src/qt/res/icons/becoin.png
     src/qt/res/icons/clock*.png,
     src/qt/res/icons/connect*.png
     src/qt/res/icons/eye_minus.png,
@@ -58,7 +58,7 @@ Other
     src/qt/res/icons/verify.png,
     src/qt/res/icons/tx_inout.png
     src/qt/res/icons/tx_input.png,
-    src/qt/res/src/bitcoin.svg,
+    src/qt/res/src/becoin.svg,
     src/qt/res/src/clock*.svg
     src/qt/res/src/connect*.svg,
     src/qt/res/src/mine.svg

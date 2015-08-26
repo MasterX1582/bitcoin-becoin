@@ -1,0 +1,2 @@
+usr/local/bin/becoind usr/bin
+usr/local/bin/becoin-cli usr/bin

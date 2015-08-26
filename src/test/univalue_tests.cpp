@@ -7,7 +7,7 @@
 #include <string>
 #include <map>
 #include "univalue/univalue.h"
-#include "test/test_bitcoin.h"
+#include "test/test_becoin.h"
 
 #include <boost/test/unit_test.hpp>
 
@@ -314,21 +314,6 @@ BOOST_AUTO_TEST_CASE(univalue_readwrite)
     BOOST_CHECK(obj["key3"].isObject());
 
     BOOST_CHECK_EQUAL(strJson1, v.write());
-
-    /* Check for (correctly reporting) a parsing error if the initial
-       JSON construct is followed by more stuff.  Note that whitespace
-       is, of course, exempt.  */
-
-    BOOST_CHECK(v.read("  {}\n  "));
-    BOOST_CHECK(v.isObject());
-    BOOST_CHECK(v.read("  []\n  "));
-    BOOST_CHECK(v.isArray());
-
-    BOOST_CHECK(!v.read("@{}"));
-    BOOST_CHECK(!v.read("{} garbage"));
-    BOOST_CHECK(!v.read("[]{}"));
-    BOOST_CHECK(!v.read("{}[]"));
-    BOOST_CHECK(!v.read("{} 42"));
 }
 
 BOOST_AUTO_TEST_SUITE_END()

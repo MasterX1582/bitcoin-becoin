@@ -1,0 +1,6 @@
+usr/local/bin/becoin-qt usr/bin
+share/pixmaps/becoin32.xpm usr/share/pixmaps
+share/pixmaps/becoin16.xpm usr/share/pixmaps
+share/pixmaps/becoin128.png usr/share/pixmaps
+debian/becoin-qt.desktop usr/share/applications
+debian/becoin-qt.protocol usr/share/kde4/services/
