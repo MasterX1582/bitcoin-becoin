@@ -1086,8 +1086,8 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
         return 0;
 
     CAmount nSubsidy = 159 * COIN;
-	// block reward within first 1000 blocks = 159000
-	if(nHeight < 1000) CAmount nSubsidy = 159000;
+	// block reward within first 1000 blocks = 15900
+	if(nHeight < 100) CAmount nSubsidy = 159000;
 	
     // Subsidy is cut in half every 159,000 blocks.s
     nSubsidy >>= halvings;
