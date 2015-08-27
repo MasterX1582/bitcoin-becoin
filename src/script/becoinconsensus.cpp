@@ -87,5 +87,5 @@ int becoinconsensus_verify_script(const unsigned char *scriptPubKey, unsigned in
 unsigned int becoinconsensus_version()
 {
     // Just use the API version for now
-    return BITCOINCONSENSUS_API_VER;
+    return BECOINCONSENSUS_API_VER;
 }

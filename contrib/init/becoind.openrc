@@ -3,40 +3,40 @@
 # backward compatibility for existing gentoo layout 
 #
 if [ -d "/var/lib/becoin/.becoin" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/becoin/.becoin"
+	BECOIND_DEFAULT_DATADIR="/var/lib/becoin/.becoin"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/becoind"
+	BECOIND_DEFAULT_DATADIR="/var/lib/becoind"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/becoin/becoin.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/becoind}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/becoind.pid}
-BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-${BITCOIN_USER:-becoin}}
-BITCOIND_GROUP=${BITCOIND_GROUP:-becoin}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/becoind}
-BITCOIND_NICE=${BITCOIND_NICE:-${NICELEVEL:-0}}
-BITCOIND_OPTS="${BITCOIND_OPTS:-${BITCOIN_OPTS}}"
+BECOIND_CONFIGFILE=${BECOIND_CONFIGFILE:-/etc/becoin/becoin.conf}
+BECOIND_PIDDIR=${BECOIND_PIDDIR:-/var/run/becoind}
+BECOIND_PIDFILE=${BECOIND_PIDFILE:-${BECOIND_PIDDIR}/becoind.pid}
+BECOIND_DATADIR=${BECOIND_DATADIR:-${BECOIND_DEFAULT_DATADIR}}
+BECOIND_USER=${BECOIND_USER:-${BECOIN_USER:-becoin}}
+BECOIND_GROUP=${BECOIND_GROUP:-becoin}
+BECOIND_BIN=${BECOIND_BIN:-/usr/bin/becoind}
+BECOIND_NICE=${BECOIND_NICE:-${NICELEVEL:-0}}
+BECOIND_OPTS="${BECOIND_OPTS:-${BECOIN_OPTS}}"
 
 name="BeCoin Core Daemon"
 description="BeCoin cryptocurrency P2P network daemon"
 
 command="/usr/bin/becoind"
-command_args="-pid=\"${BITCOIND_PIDFILE}\" \
-		-conf=\"${BITCOIND_CONFIGFILE}\" \
-		-datadir=\"${BITCOIND_DATADIR}\" \
+command_args="-pid=\"${BECOIND_PIDFILE}\" \
+		-conf=\"${BECOIND_CONFIGFILE}\" \
+		-datadir=\"${BECOIND_DATADIR}\" \
 		-daemon \
-		${BITCOIND_OPTS}"
+		${BECOIND_OPTS}"
 
-required_files="${BITCOIND_CONFIGFILE}"
-start_stop_daemon_args="-u ${BITCOIND_USER} \
-			-N ${BITCOIND_NICE} -w 2000"
-pidfile="${BITCOIND_PIDFILE}"
+required_files="${BECOIND_CONFIGFILE}"
+start_stop_daemon_args="-u ${BECOIND_USER} \
+			-N ${BECOIND_NICE} -w 2000"
+pidfile="${BECOIND_PIDFILE}"
 
 # The retry schedule to use when stopping the daemon. Could be either
 # a timeout in seconds or multiple signal/timeout pairs (like
 # "SIGKILL/180 SIGTERM/300")
-retry="${BITCOIND_SIGTERM_TIMEOUT}"
+retry="${BECOIND_SIGTERM_TIMEOUT}"
 
 depend() {
 	need localmount net
@@ -50,29 +50,29 @@ start_pre() {
 	checkpath \
 	-d \
 	--mode 0750 \
-	--owner "${BITCOIND_USER}:${BITCOIND_GROUP}" \
-	"${BITCOIND_DATADIR}"
+	--owner "${BECOIND_USER}:${BECOIND_GROUP}" \
+	"${BECOIND_DATADIR}"
 
 	checkpath \
 	-d \
 	--mode 0755 \
-	--owner "${BITCOIND_USER}:${BITCOIND_GROUP}" \
-	"${BITCOIND_PIDDIR}"
+	--owner "${BECOIND_USER}:${BECOIND_GROUP}" \
+	"${BECOIND_PIDDIR}"
 
 	checkpath -f \
-	-o ${BITCOIND_USER}:${BITCOIND_GROUP} \
+	-o ${BECOIND_USER}:${BECOIND_GROUP} \
 	-m 0660 \
-	${BITCOIND_CONFIGFILE}
+	${BECOIND_CONFIGFILE}
 
 	checkconfig || return 1
 }
 
 checkconfig()
 {
-	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
+	if ! grep -qs '^rpcpassword=' "${BECOIND_CONFIGFILE}" ; then
 		eerror ""
 		eerror "ERROR: You must set a secure rpcpassword to run becoind."
-		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
+		eerror "The setting must appear in ${BECOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
 		eerror "and must not be the same as the rpcuser setting."

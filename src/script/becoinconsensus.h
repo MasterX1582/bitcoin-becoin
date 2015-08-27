@@ -3,10 +3,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_BITCOINCONSENSUS_H
-#define BITCOIN_BITCOINCONSENSUS_H
+#ifndef BECOIN_BECOINCONSENSUS_H
+#define BECOIN_BECOINCONSENSUS_H
 
-#if defined(BUILD_BITCOIN_INTERNAL) && defined(HAVE_CONFIG_H)
+#if defined(BUILD_BECOIN_INTERNAL) && defined(HAVE_CONFIG_H)
 #include "config/becoin-config.h"
   #if defined(_WIN32)
     #if defined(DLL_EXPORT)
@@ -19,7 +19,7 @@
   #elif defined(HAVE_FUNC_ATTRIBUTE_VISIBILITY)
     #define EXPORT_SYMBOL __attribute__ ((visibility ("default")))
   #endif
-#elif defined(MSC_VER) && !defined(STATIC_LIBBITCOINCONSENSUS)
+#elif defined(MSC_VER) && !defined(STATIC_LIBBECOINCONSENSUS)
   #define EXPORT_SYMBOL __declspec(dllimport)
 #endif
 
@@ -31,7 +31,7 @@
 extern "C" {
 #endif
 
-#define BITCOINCONSENSUS_API_VER 0
+#define BECOINCONSENSUS_API_VER 0
 
 typedef enum becoinconsensus_error_t
 {
@@ -65,4 +65,4 @@ EXPORT_SYMBOL unsigned int becoinconsensus_version();
 
 #undef EXPORT_SYMBOL
 
-#endif // BITCOIN_BITCOINCONSENSUS_H
+#endif // BECOIN_BECOINCONSENSUS_H

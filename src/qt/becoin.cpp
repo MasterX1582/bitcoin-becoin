@@ -511,7 +511,7 @@ WId BeCoinApplication::getMainWinId() const
     return window->winId();
 }
 
-#ifndef BITCOIN_QT_TEST
+#ifndef BECOIN_QT_TEST
 int main(int argc, char *argv[])
 {
     SetupEnvironment();
@@ -677,4 +677,4 @@ int main(int argc, char *argv[])
     }
     return app.getReturnValue();
 }
-#endif // BITCOIN_QT_TEST
+#endif // BECOIN_QT_TEST

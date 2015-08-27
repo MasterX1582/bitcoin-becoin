@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_NET_H
-#define BITCOIN_NET_H
+#ifndef BECOIN_NET_H
+#define BECOIN_NET_H
 
 #include "bloom.h"
 #include "compat.h"
@@ -741,4 +741,4 @@ public:
 
 void DumpBanlist();
 
-#endif // BITCOIN_NET_H
+#endif // BECOIN_NET_H

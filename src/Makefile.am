@@ -17,19 +17,19 @@ $(LIBLEVELDB) $(LIBMEMENV):
           OPT="$(CXXFLAGS) $(CPPFLAGS) -D__STDC_LIMIT_MACROS"
 endif
 
-BITCOIN_CONFIG_INCLUDES=-I$(builddir)/config
-BITCOIN_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
+BECOIN_CONFIG_INCLUDES=-I$(builddir)/config
+BECOIN_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
 
-BITCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
+BECOIN_INCLUDES += -I$(srcdir)/secp256k1/include
 
-LIBBITCOIN_SERVER=libbecoin_server.a
-LIBBITCOIN_WALLET=libbecoin_wallet.a
-LIBBITCOIN_COMMON=libbecoin_common.a
-LIBBITCOIN_CLI=libbecoin_cli.a
-LIBBITCOIN_UTIL=libbecoin_util.a
-LIBBITCOIN_CRYPTO=crypto/libbecoin_crypto.a
-LIBBITCOIN_UNIVALUE=univalue/libbecoin_univalue.a
-LIBBITCOINQT=qt/libbecoinqt.a
+LIBBECOIN_SERVER=libbecoin_server.a
+LIBBECOIN_WALLET=libbecoin_wallet.a
+LIBBECOIN_COMMON=libbecoin_common.a
+LIBBECOIN_CLI=libbecoin_cli.a
+LIBBECOIN_UTIL=libbecoin_util.a
+LIBBECOIN_CRYPTO=crypto/libbecoin_crypto.a
+LIBBECOIN_UNIVALUE=univalue/libbecoin_univalue.a
+LIBBECOINQT=qt/libbecoinqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
 $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
@@ -45,31 +45,31 @@ EXTRA_LIBRARIES = \
   libbecoin_server.a \
   libbecoin_cli.a
 if ENABLE_WALLET
-BITCOIN_INCLUDES += $(BDB_CPPFLAGS)
+BECOIN_INCLUDES += $(BDB_CPPFLAGS)
 EXTRA_LIBRARIES += libbecoin_wallet.a
 endif
 
-if BUILD_BITCOIN_LIBS
+if BUILD_BECOIN_LIBS
 lib_LTLIBRARIES = libbecoinconsensus.la
-LIBBITCOIN_CONSENSUS=libbecoinconsensus.la
+LIBBECOIN_CONSENSUS=libbecoinconsensus.la
 else
-LIBBITCOIN_CONSENSUS=
+LIBBECOIN_CONSENSUS=
 endif
 
 bin_PROGRAMS =
 TESTS =
 
-if BUILD_BITCOIND
+if BUILD_BECOIND
   bin_PROGRAMS += becoind
 endif
 
-if BUILD_BITCOIN_UTILS
+if BUILD_BECOIN_UTILS
   bin_PROGRAMS += becoin-cli becoin-tx
 endif
 
 .PHONY: FORCE
 # becoin core #
-BITCOIN_CORE_H = \
+BECOIN_CORE_H = \
   addrman.h \
   alert.h \
   amount.h \
@@ -163,7 +163,7 @@ obj/build.h: FORCE
 libbecoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
 # server: shared between becoind and becoin-qt
-libbecoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS)
+libbecoin_server_a_CPPFLAGS = $(BECOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS)
 libbecoin_server_a_SOURCES = \
   addrman.cpp \
   alert.cpp \
@@ -192,11 +192,11 @@ libbecoin_server_a_SOURCES = \
   txdb.cpp \
   txmempool.cpp \
   validationinterface.cpp \
-  $(BITCOIN_CORE_H)
+  $(BECOIN_CORE_H)
 
 # wallet: shared between becoind and becoin-qt, but only linked
 # when wallet enabled
-libbecoin_wallet_a_CPPFLAGS = $(BITCOIN_INCLUDES)
+libbecoin_wallet_a_CPPFLAGS = $(BECOIN_INCLUDES)
 libbecoin_wallet_a_SOURCES = \
   wallet/crypter.cpp \
   wallet/db.cpp \
@@ -205,10 +205,10 @@ libbecoin_wallet_a_SOURCES = \
   wallet/wallet.cpp \
   wallet/wallet_ismine.cpp \
   wallet/walletdb.cpp \
-  $(BITCOIN_CORE_H)
+  $(BECOIN_CORE_H)
 
 # crypto primitives library
-crypto_libbecoin_crypto_a_CPPFLAGS = $(BITCOIN_CONFIG_INCLUDES)
+crypto_libbecoin_crypto_a_CPPFLAGS = $(BECOIN_CONFIG_INCLUDES)
 crypto_libbecoin_crypto_a_SOURCES = \
   crypto/common.h \
   crypto/hmac_sha256.cpp \
@@ -233,7 +233,7 @@ univalue_libbecoin_univalue_a_SOURCES = \
   univalue/univalue_write.cpp
 
 # common: shared between becoind, and becoin-qt and non-server tools
-libbecoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
+libbecoin_common_a_CPPFLAGS = $(BECOIN_INCLUDES)
 libbecoin_common_a_SOURCES = \
   amount.cpp \
   arith_uint256.cpp \
@@ -259,12 +259,12 @@ libbecoin_common_a_SOURCES = \
   script/script_error.cpp \
   script/sign.cpp \
   script/standard.cpp \
-  $(BITCOIN_CORE_H)
+  $(BECOIN_CORE_H)
 
 # util: shared between all executables.
 # This library *must* be included to make sure that the glibc
 # backward-compatibility objects and their sanity checks are linked.
-libbecoin_util_a_CPPFLAGS = $(BITCOIN_INCLUDES)
+libbecoin_util_a_CPPFLAGS = $(BECOIN_INCLUDES)
 libbecoin_util_a_SOURCES = \
   support/pagelocker.cpp \
   chainparamsbase.cpp \
@@ -281,24 +281,24 @@ libbecoin_util_a_SOURCES = \
   utilmoneystr.cpp \
   utilstrencodings.cpp \
   utiltime.cpp \
-  $(BITCOIN_CORE_H)
+  $(BECOIN_CORE_H)
 
 if GLIBC_BACK_COMPAT
 libbecoin_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
 # cli: shared between becoin-cli and becoin-qt
-libbecoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
+libbecoin_cli_a_CPPFLAGS = $(BECOIN_INCLUDES)
 libbecoin_cli_a_SOURCES = \
   rpcclient.cpp \
-  $(BITCOIN_CORE_H)
+  $(BECOIN_CORE_H)
 
 nodist_libbecoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # becoind binary #
 becoind_SOURCES = becoind.cpp
-becoind_CPPFLAGS = $(BITCOIN_INCLUDES)
+becoind_CPPFLAGS = $(BECOIN_INCLUDES)
 becoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
@@ -306,11 +306,11 @@ becoind_SOURCES += becoind-res.rc
 endif
 
 becoind_LDADD = \
-  $(LIBBITCOIN_SERVER) \
-  $(LIBBITCOIN_COMMON) \
-  $(LIBBITCOIN_UNIVALUE) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_CRYPTO) \
+  $(LIBBECOIN_SERVER) \
+  $(LIBBECOIN_COMMON) \
+  $(LIBBECOIN_UNIVALUE) \
+  $(LIBBECOIN_UTIL) \
+  $(LIBBECOIN_CRYPTO) \
   $(LIBLEVELDB) \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
@@ -324,7 +324,7 @@ becoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNP
 
 # becoin-cli binary #
 becoin_cli_SOURCES = becoin-cli.cpp
-becoin_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+becoin_cli_CPPFLAGS = $(BECOIN_INCLUDES)
 becoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
@@ -332,9 +332,9 @@ becoin_cli_SOURCES += becoin-cli-res.rc
 endif
 
 becoin_cli_LDADD = \
-  $(LIBBITCOIN_CLI) \
-  $(LIBBITCOIN_UNIVALUE) \
-  $(LIBBITCOIN_UTIL) \
+  $(LIBBECOIN_CLI) \
+  $(LIBBECOIN_UNIVALUE) \
+  $(LIBBECOIN_UTIL) \
   $(LIBSECP256K1)
 
 becoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS)
@@ -342,7 +342,7 @@ becoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS)
 
 # becoin-tx binary #
 becoin_tx_SOURCES = becoin-tx.cpp
-becoin_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+becoin_tx_CPPFLAGS = $(BECOIN_INCLUDES)
 becoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
@@ -350,17 +350,17 @@ becoin_tx_SOURCES += becoin-tx-res.rc
 endif
 
 becoin_tx_LDADD = \
-  $(LIBBITCOIN_UNIVALUE) \
-  $(LIBBITCOIN_COMMON) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_CRYPTO) \
+  $(LIBBECOIN_UNIVALUE) \
+  $(LIBBECOIN_COMMON) \
+  $(LIBBECOIN_UTIL) \
+  $(LIBBECOIN_CRYPTO) \
   $(LIBSECP256K1)
 
 becoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # becoinconsensus library #
-if BUILD_BITCOIN_LIBS
+if BUILD_BECOIN_LIBS
 include_HEADERS = script/becoinconsensus.h
 libbecoinconsensus_la_SOURCES = \
   crypto/hmac_sha512.cpp \
@@ -385,7 +385,7 @@ endif
 
 libbecoinconsensus_la_LDFLAGS = -no-undefined $(RELDFLAGS)
 libbecoinconsensus_la_LIBADD = $(CRYPTO_LIBS)
-libbecoinconsensus_la_CPPFLAGS = $(CRYPTO_CFLAGS) -I$(builddir)/obj -DBUILD_BITCOIN_INTERNAL
+libbecoinconsensus_la_CPPFLAGS = $(CRYPTO_CFLAGS) -I$(builddir)/obj -DBUILD_BECOIN_INTERNAL
 
 endif
 #

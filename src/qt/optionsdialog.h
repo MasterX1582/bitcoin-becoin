@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_OPTIONSDIALOG_H
-#define BITCOIN_QT_OPTIONSDIALOG_H
+#ifndef BECOIN_QT_OPTIONSDIALOG_H
+#define BECOIN_QT_OPTIONSDIALOG_H
 
 #include <QDialog>
 
@@ -60,4 +60,4 @@ private:
     bool fProxyIpsValid;
 };
 
-#endif // BITCOIN_QT_OPTIONSDIALOG_H
+#endif // BECOIN_QT_OPTIONSDIALOG_H

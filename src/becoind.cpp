@@ -80,7 +80,7 @@ bool AppInit(int argc, char* argv[])
             strUsage += "\n" + _("Usage:") + "\n" +
                   "  becoind [options]                     " + _("Start BeCoin Core Daemon") + "\n";
 
-            strUsage += "\n" + HelpMessage(HMM_BITCOIND);
+            strUsage += "\n" + HelpMessage(HMM_BECOIND);
         }
 
         fprintf(stdout, "%s", strUsage.c_str());

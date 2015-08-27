@@ -110,7 +110,7 @@ class TestNode(NodeConnCB):
 class AcceptBlockTest(BeCoinTestFramework):
     def add_options(self, parser):
         parser.add_option("--testbinary", dest="testbinary",
-                          default=os.getenv("BITCOIND", "becoind"),
+                          default=os.getenv("BECOIND", "becoind"),
                           help="becoind binary to test")
 
     def setup_chain(self):

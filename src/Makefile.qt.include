@@ -138,7 +138,7 @@ QT_MOC_CPP = \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp
 
-BITCOIN_MM = \
+BECOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
@@ -158,7 +158,7 @@ PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
 PROTOBUF_PROTO = qt/paymentrequest.proto
 
-BITCOIN_QT_H = \
+BECOIN_QT_H = \
   qt/addressbookpage.h \
   qt/addresstablemodel.h \
   qt/askpassphrasedialog.h \
@@ -259,7 +259,7 @@ RES_ICONS = \
   qt/res/icons/warning.png \
   qt/res/icons/verify.png
 
-BITCOIN_QT_CPP = \
+BECOIN_QT_CPP = \
   qt/becoinaddressvalidator.cpp \
   qt/becoinamountfield.cpp \
   qt/becoingui.cpp \
@@ -282,11 +282,11 @@ BITCOIN_QT_CPP = \
   qt/utilitydialog.cpp
 
 if TARGET_WINDOWS
-BITCOIN_QT_CPP += qt/winshutdownmonitor.cpp
+BECOIN_QT_CPP += qt/winshutdownmonitor.cpp
 endif
 
 if ENABLE_WALLET
-BITCOIN_QT_CPP += \
+BECOIN_QT_CPP += \
   qt/addressbookpage.cpp \
   qt/addresstablemodel.cpp \
   qt/askpassphrasedialog.cpp \
@@ -319,15 +319,15 @@ RES_IMAGES =
 
 RES_MOVIES = $(wildcard qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/becoin-qt-res.rc
+BECOIN_RC = qt/res/becoin-qt-res.rc
 
-BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
+BECOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms -DQT_NO_KEYWORDS
 
-qt_libbecoinqt_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+qt_libbecoinqt_a_CPPFLAGS = $(BECOIN_INCLUDES) $(BECOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_libbecoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
+qt_libbecoinqt_a_SOURCES = $(BECOIN_QT_CPP) $(BECOIN_QT_H) $(QT_FORMS_UI) \
   $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_MOVIES)
 
 nodist_qt_libbecoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
@@ -347,21 +347,21 @@ $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
 # becoin-qt binary #
-qt_becoin_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+qt_becoin_qt_CPPFLAGS = $(BECOIN_INCLUDES) $(BECOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
 qt_becoin_qt_SOURCES = qt/becoin.cpp
 if TARGET_DARWIN
-  qt_becoin_qt_SOURCES += $(BITCOIN_MM)
+  qt_becoin_qt_SOURCES += $(BECOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_becoin_qt_SOURCES += $(BITCOIN_RC)
+  qt_becoin_qt_SOURCES += $(BECOIN_RC)
 endif
-qt_becoin_qt_LDADD = qt/libbecoinqt.a $(LIBBITCOIN_SERVER)
+qt_becoin_qt_LDADD = qt/libbecoinqt.a $(LIBBECOIN_SERVER)
 if ENABLE_WALLET
-qt_becoin_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_becoin_qt_LDADD += $(LIBBECOIN_WALLET)
 endif
-qt_becoin_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_becoin_qt_LDADD += $(LIBBECOIN_CLI) $(LIBBECOIN_COMMON) $(LIBBECOIN_UTIL) $(LIBBECOIN_CRYPTO) $(LIBBECOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1)
 qt_becoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 qt_becoin_qt_LIBTOOLFLAGS = --tag CXX
@@ -375,7 +375,7 @@ qt/becoinstrings.cpp: $(libbecoin_server_a_SOURCES) $(libbecoin_wallet_a_SOURCES
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/becoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/becoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BECOIN_QT_CPP) $(BECOIN_QT_H) $(BECOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/becoin_en.ts
 
@@ -395,7 +395,7 @@ CLEAN_QT = $(nodist_qt_libbecoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda q
 CLEANFILES += $(CLEAN_QT)
 
 becoin_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbecoinqt_a_OBJECTS) $(qt_becoin_qt_OBJECTS) qt/becoin-qt$(EXEEXT) $(LIBBITCOINQT)
+	rm -f $(CLEAN_QT) $(qt_libbecoinqt_a_OBJECTS) $(qt_becoin_qt_OBJECTS) qt/becoin-qt$(EXEEXT) $(LIBBECOINQT)
 
 becoin_qt : qt/becoin-qt$(EXEEXT)
 

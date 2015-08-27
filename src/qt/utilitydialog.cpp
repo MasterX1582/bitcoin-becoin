@@ -70,7 +70,7 @@ HelpMessageDialog::HelpMessageDialog(QWidget *parent, bool about) :
         cursor.insertText(header);
         cursor.insertBlock();
 
-        QString coreOptions = QString::fromStdString(HelpMessage(HMM_BITCOIN_QT));
+        QString coreOptions = QString::fromStdString(HelpMessage(HMM_BECOIN_QT));
         text = version + "\n" + header + "\n" + coreOptions;
 
         QTextTableFormat tf;

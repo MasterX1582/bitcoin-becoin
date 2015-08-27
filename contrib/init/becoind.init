@@ -19,14 +19,14 @@ fi
 RETVAL=0
 
 prog=becoind
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/becoind
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/becoind}
+# you can override the lockfile via BECOIND_LOCKFILE in /etc/sysconfig/becoind
+lockfile=${BECOIND_LOCKFILE-/var/lock/subsys/becoind}
 
-# becoind defaults to /usr/bin/becoind, override with BITCOIND_BIN
-becoind=${BITCOIND_BIN-/usr/bin/becoind}
+# becoind defaults to /usr/bin/becoind, override with BECOIND_BIN
+becoind=${BECOIND_BIN-/usr/bin/becoind}
 
-# becoind opts default to -disablewallet, override with BITCOIND_OPTS
-becoind_opts=${BITCOIND_OPTS--disablewallet}
+# becoind opts default to -disablewallet, override with BECOIND_OPTS
+becoind_opts=${BECOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "

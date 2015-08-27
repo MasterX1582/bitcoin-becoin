@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_COINS_H
-#define BITCOIN_COINS_H
+#ifndef BECOIN_COINS_H
+#define BECOIN_COINS_H
 
 #include "compressor.h"
 #include "core_memusage.h"
@@ -462,4 +462,4 @@ private:
     CCoinsViewCache(const CCoinsViewCache &);
 };
 
-#endif // BITCOIN_COINS_H
+#endif // BECOIN_COINS_H

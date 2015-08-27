@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_MINER_H
-#define BITCOIN_MINER_H
+#ifndef BECOIN_MINER_H
+#define BECOIN_MINER_H
 
 #include "primitives/block.h"
 
@@ -32,4 +32,4 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn);
 void IncrementExtraNonce(CBlock* pblock, const CBlockIndex* pindexPrev, unsigned int& nExtraNonce);
 int64_t UpdateTime(CBlockHeader* pblock, const Consensus::Params& consensusParams, const CBlockIndex* pindexPrev);
 
-#endif // BITCOIN_MINER_H
+#endif // BECOIN_MINER_H

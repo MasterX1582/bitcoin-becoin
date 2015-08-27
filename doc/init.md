@@ -94,7 +94,7 @@ use old versions of Upstart and do not supply the start-stop-daemon utility.
 Copy becoind.init to /etc/init.d/becoind. Test by running `service becoind start`.
 
 Using this script, you can adjust the path and flags to the becoind program by 
-setting the BITCOIND and FLAGS environment variables in the file 
+setting the BECOIND and FLAGS environment variables in the file 
 /etc/sysconfig/becoind. You can also use the DAEMONOPTS environment variable here.
 
 5. Auto-respawn

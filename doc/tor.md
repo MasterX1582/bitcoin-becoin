@@ -1,4 +1,4 @@
-TOR SUPPORT IN BITCOIN
+TOR SUPPORT IN BECOIN
 ======================
 
 It is possible to run BeCoin as a Tor hidden service, and connect to such services.
